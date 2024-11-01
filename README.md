@@ -38,10 +38,33 @@ git rebase main
 git checkout c4
 ```
 
+### 2: Relative Refs (^)
+```
+git checkout HEAD^
+```
 
+### 3: Relative Refs #2 (~)
+```
+git checkout HEAD^
+git branch -f main c6
+git branch -f bugFix c0
+```
 
+### 4: Reversing Changes in Git
+```
+git reset local^
+git checkout pushed
+git revert pushed
+```
 
+## Moving Work Around
 
+### 1: Cherry-pick Intro
+```
+git cherry-pick c3 c4 c7
+```
 
-
-
+### 2: Interactive Rebase Intro
+```
+git rebase -i HEAD~4
+```
