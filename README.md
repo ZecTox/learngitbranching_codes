@@ -68,3 +68,28 @@ git cherry-pick c3 c4 c7
 ```
 git rebase -i HEAD~4
 ```
+
+## A Mixed Bag
+
+### 1: Grabbing Just 1 Commit
+3 different answers that I find to solve the problem 
+```
+git branch -f bugFix c1
+git cherry-pick c4
+git branch -f main c4'
+```
+OR
+```
+git rebase -i main
+git branch -f main c4'
+```
+OR
+```
+git rebase -i HEAD~3
+git branch -f main c4'
+```
+
+### 2: Juggling Commits
+```
+
+```
