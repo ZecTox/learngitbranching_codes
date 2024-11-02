@@ -3,7 +3,7 @@ My answers to all the problems in the [learngitbranching.js.org](https://learngi
 > [!NOTE]
 > I've used `git checkout` but you can use `git switch` instead of checkout.
 ------------------------------------------------------------------------
-# MAIN
+# GIT MAIN SECTION
 ## Introduction Sequence
 ### 1: Introduction to Git Commit
 ```
@@ -195,5 +195,16 @@ git cherry-pick c5 c4 c3 c2
 git branch -f three c2
 ```
 ------------------------------------------------------------------------------------
-#
+# GIT REMOTE SECTION
+## Push & Pull -- Git Remotes!
+### 1: Clone Intro
+```
+git clone
+```
 
+### 2: Remote Branches
+```
+git commit
+git checkout o/main
+git commit
+```
