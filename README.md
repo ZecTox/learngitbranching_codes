@@ -1,6 +1,9 @@
 # learngitbranching_codes
 My answers to all the problems in the [learngitbranching.js.org](https://learngitbranching.js.org/)
-
+> [!NOTE]
+> I've used `git checkout` but you can use `git switch` instead of checkout.
+------------------------------------------------------------------------
+# MAIN
 ## Introduction Sequence
 ### 1: Introduction to Git Commit
 ```
@@ -171,3 +174,26 @@ OR - ***BEST Soltion***
 ```
 git branch bugWork main~^2~
 ```
+
+### 3: Branch Spaghetti
+```
+git rebase -i one main
+git  branch -f main c5
+git rebase -i one main
+git branch -f main c5
+git branch -f one c2'
+git branch -f two c2''
+git branch -f three c2
+git checkout two
+```
+OR - ***BEST Solution***
+```
+git checkout one
+git cherry-pick c4 c3 c2
+git checkout two
+git cherry-pick c5 c4 c3 c2
+git branch -f three c2
+```
+------------------------------------------------------------------------------------
+#
+
