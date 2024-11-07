@@ -300,5 +300,45 @@ git push      #Can also use- git push origin main
 
 ### 2: Merging with remotes
 ```
+git checkout main
+git pull origin main
+git merge side1
+git merge side2
+git merge side3
+git push origin main
+```
+
+### 3: Remote Tracking
+```
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+```
+
+### 4: Git push arguments
+```
+git push origin main
+git push origin foo
+```
+
+### 5: Git push arguments -- Expanded!
+```
+git push origin main^:foo
+git push origin foo:main
+```
+
+### 6: Fetch arguments
+```
+
+```
+
+### 7: Source of nothing
+```
+
+```
+
+### 8: Pull arguments
+```
 
 ```
