@@ -208,3 +208,77 @@ git commit
 git checkout o/main
 git commit
 ```
+
+### 3: Git Fetchin'
+```
+git fetch
+```
+
+### 4: Git Pullin'
+```
+git fetch
+git merge o/main
+```
+OR - ***BEST solution***
+```
+git pull
+```
+
+### 5: Faking Teamwork
+```
+git clone
+git fakeTeamwork main 2
+git commit
+git pull
+```
+OR
+```
+git clone
+git commit
+git fakeTeamwork main 2
+git pull
+```
+
+### 6: Git Pushin'
+```
+git commit
+git commit
+git push
+```
+
+### 7: Diverged History
+```
+git clone
+git fakeTeamwork main
+git commit
+git fetch
+git rebase o/main
+git push
+```
+OR - ***BEST Solution***
+```
+git clone
+git fakeTeamwork main
+git commit
+git pull --rebase
+git push
+```
+
+### 8: Locked Main
+```
+git checkout -b feature
+git branch -f main c1
+git push
+```
+OR - ***BEST Solution***
+```
+git reset o/main
+git checkout -b feature c2
+git push      # Can also use- git push origin main 
+```
+
+## To Origin And Beyond -- Advanced Git Remotes!
+### 1: Push Main!
+```
+
+```
