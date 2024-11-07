@@ -330,15 +330,27 @@ git push origin foo:main
 
 ### 6: Fetch arguments
 ```
-
+git fetch origin c3:foo
+git fetch origin c6:main
+git checkout foo
+git merge main
 ```
 
 ### 7: Source of nothing
 ```
-
+git push origin :foo
+git fetch origin :bar
 ```
 
 ### 8: Pull arguments
 ```
-
+git fetch origin c3:foo
+git fetch origin c2:side
+git merge foo
+git merge side
+```
+OR - ***BEST Solution***
+```
+git pull origin c3:foo
+git pull origin c2:side
 ```
