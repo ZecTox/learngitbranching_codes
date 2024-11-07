@@ -280,5 +280,25 @@ git push      # Can also use- git push origin main
 ## To Origin And Beyond -- Advanced Git Remotes!
 ### 1: Push Main!
 ```
+git branch -f side3 c1
+git pull origin main
+git cherry-pick c2 c3 c4 c5 c6 c7
+git branch -f side1 c2'
+git branch -f side 2 c4'
+git branch -f main c7'
+git push origin main
+```
+OR - ***BEST Solution***
+```
+git fetch     #Can also use- git fetch origin main
+git rebase o/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push      #Can also use- git push origin main
+```
+
+### 2: Merging with remotes
+```
 
 ```
