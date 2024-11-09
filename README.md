@@ -84,7 +84,7 @@ OR
 git rebase -i main
 git branch -f main c4'
 ```
-OR - ***************BEST Solution***************
+OR - ***BEST Solution***
 ```
 git rebase -i HEAD~3
 git branch -f main c4'
@@ -112,7 +112,7 @@ git cherry-pick c2
 git rebase -i HEAD~1
 git cherry-pick c3
 ```
-OR - ***************BEST Solution***************
+OR - ***BEST Solution***
 ```
 git checkout main
 git cherry-pick c2
@@ -195,6 +195,7 @@ git cherry-pick c5 c4 c3 c2
 git branch -f three c2
 ```
 ------------------------------------------------------------------------------------
+
 # GIT REMOTE SECTION
 ## Push & Pull -- Git Remotes!
 ### 1: Clone Intro
@@ -274,7 +275,7 @@ OR - ***BEST Solution***
 ```
 git reset o/main
 git checkout -b feature c2
-git push      # Can also use- git push origin main 
+git push      # Can also use- git push origin feature
 ```
 
 ## To Origin And Beyond -- Advanced Git Remotes!
