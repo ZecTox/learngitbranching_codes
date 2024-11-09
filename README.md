@@ -194,6 +194,10 @@ git checkout two
 git cherry-pick c5 c4 c3 c2
 git branch -f three c2
 ```
+### Hope you are able to see this now
+
+<image src = "images/git_main_completed.png" width=500px>
+
 ------------------------------------------------------------------------------------
 
 # GIT REMOTE SECTION
@@ -355,3 +359,9 @@ OR - ***BEST Solution***
 git pull origin c3:foo
 git pull origin c2:side
 ```
+<p>🧑‍💻 Huh, finally completed all levels.</p> 
+<p><image src = "images/git_alllevelscleared.png" width=500px> <image src = "images/git_remote_completed.png" width=500px></p>
+
+
+> [!NOTE]
+> If found any mistake or better answers, send PR, I'll merge it. 
